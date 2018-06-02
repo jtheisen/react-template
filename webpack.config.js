@@ -28,6 +28,10 @@ module.exports = (env) => {
                 context: __dirname,
                 manifest: require('./wwwroot/dist/vendor-manifest.json')
             })
+            // new CopyWebpackPlugin([
+            //     { from: '../node_modules/@blueprintjs/core/lib/css/blueprint.css', to: '' },
+            //     { from: '**/*', to: '/absolute/path/to/dest/' }
+            // ], {})
         ].concat(isDevBuild ? [
             // Plugins that apply in development builds only
             new webpack.SourceMapDevToolPlugin({

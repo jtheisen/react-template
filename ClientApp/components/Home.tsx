@@ -1,9 +1,11 @@
 import * as React from 'react';
 import { RouteComponentProps } from 'react-router';
+import * as pt from '@blueprintjs/core'
 
 export class Home extends React.Component<RouteComponentProps<{}>, {}> {
     public render() {
         return <div>
+            <pt.InputGroup rightElement={<button className="pt-button">clickme</button>} />
             <h1>Hello, world!</h1>
             <p>Welcome to your new single-page application, built with:</p>
             <ul>
